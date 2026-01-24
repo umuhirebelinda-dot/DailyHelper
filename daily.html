@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Life Helper</title>
+    <link rel="stylesheet" href="daily.css">
+</head>
+<body>
+    <div class="header">
+        <h1  >Daily Life Helper</h1>
+        <div class="greetings" id="greetings"></div>
+        <div class="clock"></div>
+        <p>Organize your day, write quick notes, and stay motivated — simple tools for real life. </p>
+        <div class="navigatebtns">
+            <button id="taskcontainer">Go to Task List</button>
+            <button id="notes">Write Notes</button>
+            <button id="motivation">Motivation</button>
+        </div>
+    </div>
+    
+    <div class="maincontainer">
+        <div class="taskcontainer">
+            <h2>My Tasks</h2>
+            <div class="inputbox">
+                <input type="text" id="addtask" placeholder="What needs to be done?" maxlength="50" >
+                <button id="addtaskbtn">Add Task</button>
+            </div>
+            <div class="smallcontainer">
+
+            </div>
+            
+            <button>Back to Home</button>
+        </div>
+        <div class="notes">
+            <h2>Quick Notes</h2>
+            <textarea name="notes" id="note" cols="60px" rows="10px" >Write anything... thoughts, shopping list, ideas...</textarea>
+            <button id="savebtn">Save Note</button>
+            <div class="wherenotesare">
+                <p id="realnotes">(nothing saved yet)</p>
+            </div>
+            <button>Back to Home</button>
+        </div>
+        <div class="motivation">
+            <h2>Need Some Motivation?</h2>
+            <button>Show Quote</button>
+            <div class="quotes">
+                <p id="quote">Click the button to get inspired ✨</p>
+            </div>
+            <button>Back to Home</button>
+        </div>
+
+    </div>
+    <div>
+        <p class="footer">Made with ♡ for everyday life • 2026  </p>
+    </div>
+    <script src="daily.js"></script>
+    
+</body>
+</html>

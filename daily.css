@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+        
+}
+body{
+    background:  linear-gradient(rgb(225, 225, 246),rgb(215, 241, 250)); 
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    max-width: 100vw; 
+    overflow-x:hidden;
+}
+h1{
+    color:rgb(110, 165, 247);
+    margin-bottom: 45px;
+    font-family:  system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif;
+    font-size: 50px;
+}
+.clock{
+    background-color: rgb(190, 132, 245);
+    width: 150px;
+    height: 40px;
+    display: none;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.header p{
+    font-size: 24px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    font-family:system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif; 
+    color: rgb(85, 84, 84);
+    text-align: center;
+}
+.header button{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 18px 40px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border-style: none;
+    background-color:  #a3d8ff;
+}
+.header button:nth-child(even){
+    background-color:  #d5c4ff;
+}
+.maincontainer{
+    /*background-color: rgb(109, 207, 210);*/
+    padding: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 20px;
+    padding: 18px 45px;
+    box-shadow: 1px 1px 5px rgb(197, 194, 194,0.5);
+    width: 800px;
+    background-color: white;
+    display:none;
+    
+    
+}
+h2{
+    font-size: 34px;
+    font-family:system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif ;
+    color:rgb(110, 165, 247);
+}
+#addtask{
+    width: 550px;
+    padding: 20px;
+    border-radius: 13px;
+    border: 2px solid rgb(225, 217, 217);
+    margin-right: 10px;
+        
+}
+#addtask::placeholder{
+    font-size: 18px;
+}
+.taskcontainer >button{
+    width: 150px;
+    background-color: rgb(230, 231, 239);
+    padding: 9px ;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    margin-top: 75px;
+    color: rgb(51, 51, 51);
+}
+.inputbox{
+    display: flex;
+    margin-bottom: 30px;
+}
+#addtaskbtn{
+    background-color:#a3d8ff ;
+    padding: 9px ;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 15px;
+    width: 120px;
+    color: white;
+}
+#note{
+    border: 2px solid  rgb(230, 231, 239);
+    padding: 25px 20px;
+    border-radius: 20px;
+    font-size: 19px;
+    color: rgb(100, 100, 100);
+}
+#savebtn{
+    background-color:#a3d8ff ;
+    padding: 9px ;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 15px;
+    width: 130px;
+    height: 47px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+.wherenotesare{
+    border:1px dashed rgb(247, 191, 247);
+    border-radius: 14px;
+    background-color: #f3f9fd;
+    height: 140px;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-family:system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif ;
+    margin-bottom: 30px;
+    color: rgb(66, 66, 66);
+}
+.notes button:last-of-type{
+    width: 150px;
+    background-color: rgb(230, 231, 239);
+    padding: 10px ;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+.motivation button:first-of-type {
+    background-color:#a3d8ff ;
+    padding: 9px ;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 15px;
+    width: 130px;
+    height: 47px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 24px; 
+}
+.motivation button:last-of-type{
+    width: 150px;
+    background-color: rgb(230, 231, 239);
+    padding: 9px ;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    color: rgb(51, 51, 51);
+}
+.quotes{
+    background-color: #f6f4fc;
+    border-radius: 20px;
+    padding: 8px 29px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif ;
+    box-shadow: -5px 0px 0px rgb(202, 182, 247); 
+}
+.footer{
+    font-family:system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif ;
+    color: rgb(134, 135, 137);
+}
+.motivation{
+    display:none
+}
+.notes{
+    display: none;
+}
+.taskcontainer{
+    display: none;
+}
+.taskList{
+    background-color: #f8f9fc;
+    border-radius: 15px;
+    padding: 10px 29px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacC, "Segoe UI", Roboto, sans-serif ;
+    box-shadow: -5px 0px 0px rgb(85, 187, 255,0.6);
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.taskList button{
+    background-color: rgb(252, 213, 213);
+    border-style: none;
+    width: 65px;
+    height:28px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:rgb(180, 7, 7);
+}
+.taskList p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
