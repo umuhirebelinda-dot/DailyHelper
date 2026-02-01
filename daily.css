@@ -21,10 +21,18 @@ h1{
     font-size: 50px;
 }
 .clock{
-    background-color: rgb(190, 132, 245);
-    width: 150px;
-    height: 40px;
-    display: none;
+    font-size: 4rem;
+    background-color:rgb(225, 225, 246 ) ;
+    color: #7e52ee;
+    padding: 20px 40px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    transition: all 0.3s;
+}
+.clock:hover{
+    background-color: #d5c4ff;
+    color: #4807ec;
+    cursor:grab ;
 }
 .header{
     display: flex;

@@ -105,6 +105,19 @@ showquotebtn.addEventListener("click",()=>{
         i=0;
     };
 });
+let clock=document.getElementsByClassName('clock')[0];
+
+ 
+function ftime(){
+  let time= new Date();
+  let hour=time.getHours() ;
+  let min=time.getMinutes();
+  let sec=time.getSeconds();
+  
+  clock.innerHTML=`${hour}:${min}:${sec}`;
+}
+ setInterval(ftime,1000);
+ 
 
 
 
